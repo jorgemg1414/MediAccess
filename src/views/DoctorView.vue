@@ -69,6 +69,12 @@ const handleUpdate = (data) => {
   display: flex;
   flex-direction: column;
   background: var(--bg-tertiary);
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .doctor-header {
