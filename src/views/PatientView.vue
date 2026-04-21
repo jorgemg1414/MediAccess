@@ -2,17 +2,7 @@
   <div class="patient-view">
     <header class="app-header">
       <ThemeToggle class="theme-toggle" />
-      <div class="header-side">
-        <span class="side-icon">🏥</span>
-        <p class="side-title">Atención médica</p>
-        <p class="side-sub">remota y accesible</p>
-      </div>
       <img src="/logo.jpeg" alt="MediAccess" class="logo" />
-      <div class="header-side right">
-        <span class="side-icon">📍</span>
-        <p class="side-title">Tepatitlán</p>
-        <p class="side-sub">Jalisco, México</p>
-      </div>
     </header>
 
     <main>

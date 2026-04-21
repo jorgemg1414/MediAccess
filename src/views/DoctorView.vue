@@ -5,17 +5,7 @@
         <ThemeToggle />
         <router-link to="/" class="btn-home">🏠 Paciente</router-link>
       </div>
-      <div class="header-side">
-        <span class="side-icon">👨‍⚕️</span>
-        <p class="side-title">Panel Médico</p>
-        <p class="side-sub">Centro de Salud</p>
-      </div>
       <img src="/logo.jpeg" alt="MediAccess" class="logo" />
-      <div class="header-side right">
-        <span class="side-icon">📍</span>
-        <p class="side-title">Tepatitlán</p>
-        <p class="side-sub">Jalisco, México</p>
-      </div>
     </header>
 
     <main class="doctor-main">
