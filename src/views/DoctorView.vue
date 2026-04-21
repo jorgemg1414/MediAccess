@@ -1,20 +1,12 @@
 <template>
   <div class="doctor-view">
     <header class="doctor-header">
-      <div class="header-content">
-        <div class="header-left">
-          <img src="/logo.jpeg" alt="MediAccess" class="logo" />
-          <div>
-            <h1>Panel Médico</h1>
-            <span class="subtitle">Centro de Salud Tepatitlán</span>
-          </div>
-        </div>
-        <div class="header-actions">
-          <ThemeToggle />
-          <router-link to="/" class="btn-home">
-            🏠 Paciente
-          </router-link>
-        </div>
+      <img src="/logo.jpeg" alt="MediAccess" class="logo" />
+      <div class="header-actions">
+        <ThemeToggle />
+        <router-link to="/" class="btn-home">
+          🏠 Paciente
+        </router-link>
       </div>
     </header>
 
@@ -78,32 +70,31 @@ const handleUpdate = (data) => {
 }
 
 .doctor-header {
-  background: linear-gradient(135deg, #059669, #047857);
-  color: white;
-  padding: 16px 20px;
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  padding: 28px 20px;
+  background: #f8fafc;
+  border-bottom: 3px solid #059669;
 }
 
 .logo {
-  height: 44px;
+  height: 130px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(5, 150, 105, 0.18));
+}
+
+.header-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header-left h1 {

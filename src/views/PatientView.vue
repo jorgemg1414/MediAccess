@@ -1,11 +1,10 @@
 <template>
   <div class="patient-view">
     <header class="app-header">
+      <ThemeToggle class="theme-toggle" />
       <img src="/logo.jpeg" alt="MediAccess" class="logo" />
-      <h1>Salud Comunitaria Tepatitlán</h1>
-      <ThemeToggle />
     </header>
-    
+
     <main>
       <PatientForm />
     </main>
@@ -37,25 +36,26 @@ import ThemeToggle from '../components/shared/ThemeToggle.vue'
 }
 
 .app-header {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 20px;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  color: white;
+  align-items: center;
+  padding: 32px 20px;
+  background: #f8fafc;
+  border-bottom: 3px solid #3b82f6;
 }
 
 .logo {
-  height: 48px;
+  height: 140px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(59, 130, 246, 0.18));
 }
 
-.app-header h1 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
+.theme-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
 main {
