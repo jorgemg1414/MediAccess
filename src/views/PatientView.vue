@@ -115,6 +115,7 @@ import ThemeToggle from '../components/shared/ThemeToggle.vue'
   object-fit: contain;
   filter: drop-shadow(0 6px 16px rgba(59, 130, 246, 0.18));
   flex-shrink: 0;
+  animation: float 3.5s ease-in-out infinite;
 }
 
 .theme-toggle {
@@ -186,6 +187,9 @@ main {
   border: 1px solid var(--border-color);
 }
 
+.left-panel  { animation: slideInLeft  0.5s ease both; }
+.right-panel { animation: slideInRight 0.5s ease both; }
+
 .side-panel h3 {
   font-size: 14px;
   font-weight: 700;
@@ -219,7 +223,23 @@ main {
   font-size: 13px;
   font-weight: 700;
   flex-shrink: 0;
+  animation: popIn 0.4s ease both;
 }
+
+.step:nth-child(1) .step-num { animation-delay: 0.1s; }
+.step:nth-child(2) .step-num { animation-delay: 0.25s; }
+.step:nth-child(3) .step-num { animation-delay: 0.4s; }
+
+.step { animation: slideInUp 0.4s ease both; }
+.step:nth-child(1) { animation-delay: 0.1s; }
+.step:nth-child(2) { animation-delay: 0.22s; }
+.step:nth-child(3) { animation-delay: 0.34s; }
+
+.info-card { animation: slideInUp 0.4s ease both; }
+.info-card:nth-child(1) { animation-delay: 0.1s; }
+.info-card:nth-child(2) { animation-delay: 0.2s; }
+.info-card:nth-child(3) { animation-delay: 0.3s; }
+.info-card:nth-child(4) { animation-delay: 0.4s; }
 
 .step-title {
   font-size: 13px;

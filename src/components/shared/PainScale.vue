@@ -87,14 +87,23 @@ const getFace = (level) => {
 }
 
 .face-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.2) rotate(-5deg);
   background: #e5e7eb;
 }
 
 .face-btn.active {
   border-color: #3b82f6;
   background: #dbeafe;
-  transform: scale(1.15);
+  transform: scale(1.25);
+  animation: wobble 0.4s ease;
+}
+
+@keyframes wobble {
+  0%   { transform: scale(1.25) rotate(0deg); }
+  25%  { transform: scale(1.25) rotate(-8deg); }
+  50%  { transform: scale(1.25) rotate(8deg); }
+  75%  { transform: scale(1.25) rotate(-4deg); }
+  100% { transform: scale(1.25) rotate(0deg); }
 }
 
 .scale-labels {

@@ -63,6 +63,7 @@ defineEmits(['new-case'])
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
+  animation: slideInUp 0.5s ease both;
 }
 
 .success-icon {
@@ -88,6 +89,7 @@ h1 {
   padding: 24px;
   border-radius: 16px;
   margin-bottom: 24px;
+  animation: popIn 0.5s ease 0.3s both;
 }
 
 .folio-label {
@@ -161,15 +163,19 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  background: var(--accent-color);
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 50%, #3b82f6 100%);
+  background-size: 200% auto;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: shimmer 2.5s linear infinite, slideInUp 0.4s ease 0.5s both;
 }
 
 .btn-new-case:hover {
-  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59,130,246,0.4);
 }
 
 .btn-profile {

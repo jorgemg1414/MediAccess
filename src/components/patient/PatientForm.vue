@@ -192,7 +192,17 @@ const resetForm = () => {
 
 .form-group {
   margin-bottom: 20px;
+  animation: slideInUp 0.4s ease both;
 }
+
+.form-group:nth-child(1) { animation-delay: 0.05s; }
+.form-group:nth-child(2) { animation-delay: 0.1s; }
+.form-group:nth-child(3) { animation-delay: 0.15s; }
+.form-group:nth-child(4) { animation-delay: 0.2s; }
+.form-group:nth-child(5) { animation-delay: 0.25s; }
+.form-group:nth-child(6) { animation-delay: 0.3s; }
+.form-group:nth-child(7) { animation-delay: 0.35s; }
+.form-group:nth-child(8) { animation-delay: 0.4s; }
 
 .form-row {
   display: grid;
@@ -220,6 +230,7 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: #3b82f6;
+  animation: borderGlow 1s ease;
 }
 
 textarea {
@@ -240,16 +251,18 @@ textarea {
   font-size: 20px;
   font-weight: 700;
   color: white;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 50%, #3b82f6 100%);
+  background-size: 200% auto;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  animation: shimmer 2.5s linear infinite;
 }
 
 .btn-submit:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.45);
 }
 
 .btn-submit:disabled {

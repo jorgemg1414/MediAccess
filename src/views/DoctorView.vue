@@ -148,6 +148,7 @@ const handleUpdate = (data) => {
   object-fit: contain;
   filter: drop-shadow(0 6px 16px rgba(5, 150, 105, 0.18));
   flex-shrink: 0;
+  animation: float 3.5s ease-in-out infinite;
 }
 
 .header-actions {
@@ -236,6 +237,21 @@ const handleUpdate = (data) => {
   border: 1px solid var(--border-color);
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
+
+.left-panel  { animation: slideInLeft  0.5s ease both; }
+.right-panel { animation: slideInRight 0.5s ease both; }
+
+.stat-card { animation: popIn 0.45s ease both; }
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.22s; }
+.stat-card:nth-child(3) { animation-delay: 0.34s; }
+
+.stat-num { animation: countPulse 2s ease-in-out infinite; }
+
+.sev-item { animation: slideInUp 0.4s ease both; }
+.sev-item:nth-child(1) { animation-delay: 0.1s; }
+.sev-item:nth-child(2) { animation-delay: 0.22s; }
+.sev-item:nth-child(3) { animation-delay: 0.34s; }
 
 .side-panel h3 {
   font-size: 13px;

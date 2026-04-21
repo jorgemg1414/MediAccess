@@ -37,6 +37,12 @@ const icons = {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
+  animation: popIn 0.4s ease both;
+  transition: transform 0.2s;
+}
+
+.severity-badge:hover {
+  transform: scale(1.05);
 }
 
 .severity-leve {

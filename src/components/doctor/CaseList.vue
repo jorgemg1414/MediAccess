@@ -175,11 +175,24 @@ const truncate = (text, len) => {
   color: #4b5563;
   cursor: pointer;
   transition: all 0.2s;
+  animation: popIn 0.35s ease both;
+}
+
+.filter-btn:nth-child(1) { animation-delay: 0.05s; }
+.filter-btn:nth-child(2) { animation-delay: 0.12s; }
+.filter-btn:nth-child(3) { animation-delay: 0.19s; }
+.filter-btn:nth-child(4) { animation-delay: 0.26s; }
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .filter-btn.active {
   background: #3b82f6;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59,130,246,0.35);
 }
 
 .filter-btn .badge {
@@ -219,7 +232,15 @@ const truncate = (text, len) => {
   transition: all 0.25s ease;
   border-left: 4px solid transparent;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  animation: slideInUp 0.4s ease both;
 }
+
+.case-card:nth-child(1) { animation-delay: 0.05s; }
+.case-card:nth-child(2) { animation-delay: 0.12s; }
+.case-card:nth-child(3) { animation-delay: 0.19s; }
+.case-card:nth-child(4) { animation-delay: 0.26s; }
+.case-card:nth-child(5) { animation-delay: 0.33s; }
+.case-card:nth-child(n+6) { animation-delay: 0.4s; }
 
 .case-card:hover {
   transform: translateX(4px) translateY(-2px);
